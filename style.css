@@ -1,0 +1,17 @@
+/* Common Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Ballo Da 2', cursive;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+/* End ofCommon Styles */

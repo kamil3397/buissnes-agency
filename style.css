@@ -40,37 +40,92 @@ html{
     height: 20rem;
 }
 
-.banner-heading, span {
+.banner-heading span {
     font-family: "Oswald", sans-serif;
     font-size: 12rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
     text-shadow: .3rem .3rem .6rem rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateZ(8rem);
+    opacity: 0;
+    letter-spacing: 3rem;
 }
 
-.banner-paragraph{
+.heading-1 {
+    animation: animateHeading 12s 3s infinite;
+  }
+  
+  .heading-2 {
+    animation: animateHeading 12s 6s infinite;
+  }
+  
+  .heading-3 {
+    animation: animateHeading 12s 9s infinite;
+  }
+  
+  .heading-4 {
+    animation: animateHeading 12s 12s infinite;
+  }
+  
+  @keyframes animateHeading {
+    0% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 3rem;
+    }
+  
+    3% {
+      transform: translateZ(0);
+      opacity: 1;
+      letter-spacing: 1.5rem;
+    }
+  
+    25% {
+      transform: translateZ(0);
+      opacity: 1;
+      letter-spacing: 1.5rem;
+    }
+  
+    28% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 3rem;
+    }
+  
+    100% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 3rem;
+    }
+  }
+
+.banner-paragraph {
     font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 30%;
-    margin: 0 auto 4rem;
+    margin: 0 auto 6rem auto;
     padding: 1rem 0;
-    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, .5);
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
 }
 
-.banner-btn{
-    width: 30rem;
-    height: 6rem;
-    background: linear-gradient(to right, #9b0e0e, #7a1010);
-    color: #fff;
-    font-size: 2rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
-    border: .1rem solid #800505;
-    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, .5);
-    text-shadow: .6rem .3rem .2rem rgba(0, 0, 0, .4);
+.banner-btn {
+  width: 30rem;
+  height: 6rem;
+  background: linear-gradient(to right, #9b0e0e, #7a1010);
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  border: 0.1rem solid #800505;
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 /* End ofSection 1 */

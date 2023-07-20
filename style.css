@@ -1,5 +1,8 @@
 /* Common Styles */
-
+@font-face {
+  font-family: "MADE Soulmaze";
+  src: url(./made-soulmaze/MADE\ Soulmaze\ PERSONAL\ USE.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +18,37 @@ html {
   /* 1rem = 10px */
 }
 /* End ofCommon Styles */
+
+/* Navbar */
+.navbar{
+  width: 100%;
+  height: 8rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 10;
+  padding: 3rem;
+}
+
+.navbar-logo{
+  position: absolute;
+  top: 1.5rem;
+  left: 4rem;
+}
+
+.navbar-logo a{
+  font-family: "MADE Soulmaze", sans-serif;
+  font-size: 2.5rem;
+  color: #eee;
+  letter-spacing: .5rem;
+}
+
+.navbar-logo span{
+  font-family: "MADE Soulmaze", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #9b0e0e;
+}
+/* End of Navbar */
 
 /* Section 1 */
 
@@ -120,39 +154,39 @@ html {
 }
 
 .banner-btn {
-    width: 30rem;
-    height: 6rem;
-    background: linear-gradient(to right, #9b0e0e, #7a1010);
-    color: #fff;
-    font-size: 2rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
-    border: 0.1rem solid #800505;
-    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
-    text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    position: relative;
-    overflow: hidden;
-    animation: fadeAnimation 1s 2s forwards;
-  }
+  width: 30rem;
+  height: 6rem;
+  background: linear-gradient(to right, #9b0e0e, #7a1010);
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  border: 0.1rem solid #800505;
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  animation: fadeAnimation 1s 2s forwards;
+}
 
 .banner-btn::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, transparent, #fff, transparent);
-    position: absolute;
-    top: 0;
-    left: -100%;
-    transform: skewX(-30deg);
-    transition: left 0.5s;
-  }
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transform: skewX(-30deg);
+  transition: left 0.5s;
+}
 
-  .banner-btn:hover::before {
-    left: 100%;
-  }
+.banner-btn:hover::before {
+  left: 100%;
+}
 @keyframes fadeAnimation {
   0% {
     opacity: 0;

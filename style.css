@@ -370,6 +370,27 @@ html {
   right: 15rem;
   font-size: 2rem;
   color: #ddd;
+  border-top: 0.3rem double #aaa;
+  border-bottom: 0.3rem double #aaa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+}
+
+.fa-quote-left{
+  align-self: flex-start;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.fa-quote-right{
+  align-self: flex-end;
+  font-size: 5rem;
 }
 
 /* End of Section 2 */

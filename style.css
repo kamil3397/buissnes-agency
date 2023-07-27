@@ -17,6 +17,21 @@ html {
   font-size: 62.5%;
   /* 1rem = 10px */
 }
+
+.section-heading {
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #ddd;
+  margin-right: 4rem;
+}
+
+.section-heading-line {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ddd;
+}
+
 /* End ofCommon Styles */
 
 /* Navbar */
@@ -299,20 +314,6 @@ html {
   align-items: center;
   padding: 0 10rem;
   position: relative;
-}
-
-.section-heading {
-  font-size: 10rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
-  color: #ddd;
-  margin-right: 4rem;
-}
-
-.section-heading-line {
-  width: 15rem;
-  height: 0.2rem;
-  background-color: #ddd;
 }
 
 .video-wrapper {
